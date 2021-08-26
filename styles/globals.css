@@ -1,9 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Merriweather&display=swap");
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Merriweather", -apple-system, BlinkMacSystemFont, Segoe UI,
+    Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
+    sans-serif;
+  color: var(--offwhite);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Fredericka the Great", cursive;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 9rem;
+}
+h2 {
+  font-size: 7rem;
+}
+h3 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 2.5rem;
 }
 
 a {
@@ -13,4 +41,23 @@ a {
 
 * {
   box-sizing: border-box;
+}
+@media (max-width: 1200px) {
+  html,
+  body {
+    font-size: 2vw;
+  }
+  h1 {
+    font-size: 6rem;
+  }
+}
+
+:root {
+  --black: #050404;
+  --offwhite: #ffecd1;
+  --red: #e23232;
+  --green: #00bfb2;
+  --purple: #52489c;
+  --blue: #1098f7;
+  --yellow: #eee82c;
 }
